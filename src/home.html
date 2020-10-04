@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.1.1/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript/jquery-3.4.1.js"></script>
+    <script src="JavaScript/keys.js"></script>
+    <script src="JavaScript/javaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+    <meta charset="UTF-8">
+    <title>Steffen's movie place</title>
+</head>
+<body>
+<form class="movieForm">
+    <div class="formGroup">
+        <select id="searchOption">
+            <option id="movieSelect" value="movie">Movie</option>
+            <option id="personSelect" value="person">Person</option>
+        </select>
+        <label for="searchSpecification">Please enter</label><br>
+        <input type="text" name="txtTown" id="searchSpecification">
+        <button type="button" name="search" id="search" class="btn btn-primary">Search</button>&nbsp;&nbsp;&nbsp;
+    </div>
+</form>
+    <div class="boxed row" id="boxes">
+            Title: <span id="title"></span>
+            Release Date: <span id="releaseDate"></span>
+            Language: <span id="language"></span>
+    </div>
+
+<div class="modal" id="modal">
+    <div class="modalContent" id="modalContent">
+        Title: <span id="title1"></span>
+        <button class="close" id="close">Close</button>
+    </div>
+</div>
+
+</body>
+</html>
