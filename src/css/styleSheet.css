@@ -125,6 +125,20 @@ p.oddEvent {
     border: 1px solid #888;
     width: 80%;
 }
+.movieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+#movie-info-box {
+    margin: 20px 5px;
+    padding: 10px;
+    border: 2px solid #C96E53;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 /*.modalContent.active {*/
 /*    !*Shows pop-up content when "active" class is present *!*/
