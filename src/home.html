@@ -13,22 +13,20 @@
 <body>
 <form class="movieForm">
     <div class="formGroup">
-        <label for="searchOption"><select id="searchOption">
-            <option id="movieSelect" value="movie">Movie</option>
+        <select id="searchOption">
             <option id="personSelect" value="person">Person</option>
+            <option id="movieSelect" value="movie">Movie</option>
         </select>
-        </label>
-        <label for="searchSpecification">Please enter</label><br>
+
         <input type="text" name="txtTown" id="searchSpecification">
         <button type="button" name="search" id="search" class="btn btn-primary">Search</button>
     </div>
 </form>
-    <div class="boxed row" id="movieContainer">
-    </div>
+<div class="boxed row" id="movieContainer">
+</div>
 
 <div class="modal" id="modal">
     <div class="modalContent" id="modalContent">
-        <p>Hej</p>
         Title: <span id="modalTitle"></span><br>
         Release Date: <span id="modalRelease"></span><br>
         Language: <span id="modalLanguage"></span><br>
@@ -46,6 +44,18 @@
         <button class="close" id="close">Close</button>
     </div>
 </div>
-
+<div class="personModal" id="personModal">
+    <div class="modalContent" id="personContent">
+        Name: <span id="pModalName"></span><br>
+        Main Activity: <span id="pModalMain"></span><br>
+        Birthday: <span id="pModalBirthday"></span><br>
+        Bithplace: <span id="pModalBirthplace"></span><br>
+        Death: <span id="pModalDayOfDecease">Alive!</span><br>
+        Biography: <span id="pModalBio"></span><br>
+        Link: <span id="pModalLink"></span><br>
+        Movies: <span id="pModalMovies"></span><br>
+        <button class="button" id="pclose">Close</button>
+    </div>
+</div>
 </body>
 </html>
