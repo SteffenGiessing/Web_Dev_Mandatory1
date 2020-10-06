@@ -13,22 +13,36 @@
 <body>
 <form class="movieForm">
     <div class="formGroup">
-        <select id="searchOption">
+        <label for="searchOption"><select id="searchOption">
             <option id="movieSelect" value="movie">Movie</option>
             <option id="personSelect" value="person">Person</option>
         </select>
+        </label>
         <label for="searchSpecification">Please enter</label><br>
         <input type="text" name="txtTown" id="searchSpecification">
         <button type="button" name="search" id="search" class="btn btn-primary">Search</button>
     </div>
 </form>
     <div class="boxed row" id="movieContainer">
-
     </div>
 
 <div class="modal" id="modal">
     <div class="modalContent" id="modalContent">
         <p>Hej</p>
+        Title: <span id="modalTitle"></span><br>
+        Release Date: <span id="modalRelease"></span><br>
+        Language: <span id="modalLanguage"></span><br>
+        Runtime: <span id="modalRuntime"></span><br>
+        Overview: <span id="modalOverview"></span><br>
+        Link: <span id="modalLink"></span><br>
+        Genre: <span id="modalGenre"></span><br>
+        Produced By: <span id="modalProductionCom"></span><br>
+        Actors: <span id="modalActors"></span><br>
+        Directors: <span id="modalDirectors"></span><br>
+        Script Writers: <span id="modalScriptWriters"></span><br>
+        Executives producers: <span id="modalExecutives"></span><br>
+        Producers: <span id="modalProducers"></span><br>
+        Composers: <span id="modalComposer"></span><br>
         <button class="close" id="close">Close</button>
     </div>
 </div>
